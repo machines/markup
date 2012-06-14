@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Machines.io</title>
+	<link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
+	<!-- JCF framework -->
+	<script type="text/javascript" src="js/jcf.js"></script>
+	<!-- JCF custom forms -->
+	<script type="text/javascript" src="js/jcf.custom-forms.js"></script>
+	<!-- JQuery framework -->
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<!-- JQuery lightbox -->
+	<script type="text/javascript" src="js/jquery.modal.js"></script>
+	<!-- JQuery js for carusel and same height boxes -->
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<!-- custom form initialization -->
+	<script type="text/javascript">
+		jcf.lib.domReady(function(){
+			jcf.customForms.replaceAll();
+		});
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<!-- header -->
+	<div id="header">
+		<div class="header-holder">
+			<!-- header logo -->
+			<h1 class="logo"><a href="#">Machines.io</a></h1>
+			<!-- main navigation -->
+			<ul id="nav">
+				<li class="active"><span><a href="#">Clusters</a></span></li>				<li><span><a href="#">Applications</a></span></li>				<li><span><a href="#">Key Pairs</a></span></li>				<li><span><a href="#">SSL Certificates</a></span></li>				<li><span><a href="#">Storage</a></span></li>
+			</ul>
+			<!-- login box -->
+			<div id="login-box">
+				<a href="#" class="opener"><span>&#098;&#101;&#110;&#115;&#105;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</span></a>
+				<div class="drop">
+					<ul>
+						<li><a href="#">Log Out</a></li>						<li><a href="#">Hover State</a></li>						<li class="bottom"><a href="#">Last Link</a></li>
+					</ul>
+				</div>			</div>
+		</div>	</div>
+	<!-- main content -->
+	<div id="main">
+		<!-- cluster block -->
+		<div class="cluster-holder">
+			<div class="cluster-block">
+				<!-- add cluster button -->
+				<div class="btn-add">
+					<a href="#"><span>Add New Cluster</span></a>
+				</div>
+				<!-- cluster heading -->
+				<div class="heading">
+					<div class="holder">
+						<ul class="info">
+							<li>6 Machines</li>							<li>3 Applications</li>							<li>2 Load Balancers</li>
+						</ul>
+						<h2>JK Tech</h2>
+						<strong class="region">US East (Northern Virginia)</strong>
+					</div>				</div>
+				<div class="cluster-content">
+					<div class="cluster-row">
+						<!-- cluster title -->
+						<div class="cluster-title">
+							<span class="sep-l"></span>
+							<div class="holder">
+								<h3>Machines</h3>
+								<a href="#" class="link-add">Add</a>
+							</div>
+							<span class="sep-r"></span>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">SSH</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status online">
+										<span><span>Online</span></span>
+									</span>
+									<span class="box-content">
+										<!-- cpu - ram box -->
+										<span class="cpu-ram">
+											<span class="col">
+												<span class="num">27%</span>
+												<span class="meter-30-percent"></span>
+												<span class="label">CPU</span>
+											</span>
+											<span class="col">
+												<span class="num">43%</span>
+												<span class="meter-40-percent"></span>
+												<span class="label">RAM</span>
+											</span>
+											<span class="error">unavailable</span>
+										</span>
+										<!-- cluster box info -->
+										<span class="info">
+											<strong class="num-title">142.23.103.100</strong>
+											<strong class="num-subtitle">107.20.131.196</strong>
+											<strong class="name">Name of this Machine</strong>
+										</span>
+										<span class="categories">
+											<span>Web</span>
+											<span>Worker</span>
+											<span>Redis</span>
+											<span>Elastic Search</span>
+											<span>Category #1</span>
+											<span>Category #2</span>
+											<span>Category #3</span>
+											<span>Category #4</span>
+											<span>Category #5</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">SSH</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status building">
+										<span><span>Building</span></span>
+									</span>
+									<span class="box-content">
+										<!-- cpu - ram box -->
+										<span class="cpu-ram">
+											<span class="col">
+												<span class="num">3%</span>
+												<span class="meter-00-percent"></span>
+												<span class="label">CPU</span>
+											</span>
+											<span class="col">
+												<span class="num">74%</span>
+												<span class="meter-70-percent"></span>
+												<span class="label">RAM</span>
+											</span>
+											<span class="error">unavailable</span>
+										</span>
+										<!-- cluster box info -->
+										<span class="info">
+											<strong class="num-title">31.213.13.90</strong>
+											<strong class="num-subtitle">107.20.131.196</strong>
+										</span>
+										<span class="categories">
+											<span>Web</span>
+											<span>Worker</span>
+											<span>Redis</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">SSH</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status offline">
+										<span><span>Offline</span></span>
+									</span>
+									<span class="box-content">
+										<!-- cpu - ram box -->
+										<span class="cpu-ram unavailable">
+											<span class="col">
+												<span class="num">0%</span>
+												<span class="meter-00-percent"></span>
+												<span class="label">CPU</span>
+											</span>
+											<span class="col">
+												<span class="num">0%</span>
+												<span class="meter-00-percent"></span>
+												<span class="label">RAM</span>
+											</span>
+											<span class="error">unavailable</span>
+										</span>
+										<!-- cluster box info -->
+										<span class="info">
+											<strong class="num-title">52.211.18.96</strong>
+											<strong class="num-subtitle">107.20.131.196</strong>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">SSH</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status online">
+										<span><span>Online</span></span>
+									</span>
+									<span class="box-content">
+										<!-- cpu - ram box -->
+										<span class="cpu-ram">
+											<span class="col">
+												<span class="num">27%</span>
+												<span class="meter-30-percent"></span>
+												<span class="label">CPU</span>
+											</span>
+											<span class="col">
+												<span class="num">43%</span>
+												<span class="meter-40-percent"></span>
+												<span class="label">RAM</span>
+											</span>
+											<span class="error">unavailable</span>
+										</span>
+										<!-- cluster box info -->
+										<span class="info">
+											<strong class="num-title">142.23.103.100</strong>
+											<strong class="num-subtitle">107.20.131.196</strong>
+											<strong class="name">Name of this Machine</strong>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">SSH</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status building">
+										<span><span>Building</span></span>
+									</span>
+									<span class="box-content">
+										<!-- cpu - ram box -->
+										<span class="cpu-ram">
+											<span class="col">
+												<span class="num">3%</span>
+												<span class="meter-00-percent"></span>
+												<span class="label">CPU</span>
+											</span>
+											<span class="col">
+												<span class="num">74%</span>
+												<span class="meter-70-percent"></span>
+												<span class="label">RAM</span>
+											</span>
+											<span class="error">unavailable</span>
+										</span>
+										<!-- cluster box info -->
+										<span class="info">
+											<strong class="num-title">31.213.13.90</strong>
+											<strong class="num-subtitle">107.20.131.196</strong>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">SSH</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status offline">
+										<span><span>Offline</span></span>
+									</span>
+									<span class="box-content">
+										<!-- cpu - ram box -->
+										<span class="cpu-ram unavailable">
+											<span class="col">
+												<span class="num">0%</span>
+												<span class="meter-00-percent"></span>
+												<span class="label">CPU</span>
+											</span>
+											<span class="col">
+												<span class="num">0%</span>
+												<span class="meter-00-percent"></span>
+												<span class="label">RAM</span>
+											</span>
+											<span class="error">unavailable</span>
+										</span>
+										<!-- cluster box info -->
+										<span class="info">
+											<strong class="num-title">52.211.18.96</strong>
+											<strong class="num-subtitle">107.20.131.196</strong>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="cluster-row blue-row">
+						<!-- cluster title -->
+						<div class="cluster-title">
+							<span class="sep-l"></span>
+							<div class="holder">
+								<h3>Applications</h3>
+								<a href="#" class="link-add">Add</a>
+							</div>
+							<span class="sep-r"></span>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">Deploy</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status online">
+										<span><span>71d54b41b3</span></span>
+									</span>
+									<!-- cluster box info -->
+									<span class="box-content">
+										<strong class="title">Assessment App</strong>
+										<span class="text">assessmentapp.com (production)</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">Deploy</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status building">
+										<span><span>Building</span></span>
+									</span>
+									<!-- cluster box info -->
+									<span class="box-content">
+										<strong class="title">Flood Marrieds Groups</strong>
+										<span class="text">Small (production)</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">Deploy</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status offline">
+										<span><span>Offline</span></span>
+									</span>
+									<!-- cluster box info -->
+									<span class="box-content">
+										<strong class="title">Flood Marrieds Groups</strong>
+										<span class="text">Small (production)</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="cluster-row green-row">
+						<!-- cluster title -->
+						<div class="cluster-title">
+							<span class="sep-l"></span>
+							<div class="holder">
+								<h3>Load Balancers</h3>
+								<a href="#" class="link-add">Add</a>
+							</div>
+							<span class="sep-r"></span>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status online">
+										<span><span>Online</span></span>
+									</span>
+									<!-- cluster box info -->
+									<span class="box-content">
+										<strong class="title">disabledperson</strong>
+										<span class="text-server">disabledperson-2093972308.us.east-1.elb.amazon...</span>
+										<span class="tools">
+											<em class="num">14</em>
+											<span class="label">Machines across</span>
+											<em class="num">2</em>
+											<span class="label">Datacenters</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status online">
+										<span><span>Online</span></span>
+									</span>
+									<!-- cluster box info -->
+									<span class="box-content">
+										<strong class="title">jofdav</strong>
+										<span class="text-server">jofdav-2093972308.us.east-1.elb.amazonaws.com</span>
+										<span class="tools">
+											<em class="num">0</em>
+											<span class="label">Machines</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cluster block -->
+		<div class="cluster-holder">
+			<div class="cluster-block">
+				<!-- add cluster button 
+				<div class="btn-add">
+					<a href="#"><span>Add New Cluster</span></a>
+				</div>-->
+				<!-- cluster heading -->
+				<div class="heading">
+					<div class="holder">
+						<ul class="info">
+							<li>3 Machines</li>
+						</ul>
+						<h2>Cluster #2 Title</h2>
+						<strong class="region">US West (California)</strong>
+					</div>
+				</div>
+				<div class="cluster-content">
+					<div class="cluster-row">
+						<!-- cluster title -->
+						<div class="cluster-title">
+							<span class="sep-l"></span>
+							<div class="holder">
+								<h3>Machines</h3>
+								<a href="#" class="link-add">Add</a>
+							</div>
+							<span class="sep-r"></span>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">SSH</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status online">
+										<span><span>Online</span></span>
+									</span>
+									<span class="box-content">
+										<!-- cpu - ram box -->
+										<span class="cpu-ram">
+											<span class="col">
+												<span class="num">27%</span>
+												<span class="meter-30-percent"></span>
+												<span class="label">CPU</span>
+											</span>
+											<span class="col">
+												<span class="num">43%</span>
+												<span class="meter-40-percent"></span>
+												<span class="label">RAM</span>
+											</span>
+											<span class="error">unavailable</span>
+										</span>
+										<!-- cluster box info -->
+										<span class="info">
+											<strong class="num-title">142.23.103.100</strong>
+											<strong class="num-subtitle">107.20.131.196</strong>
+											<strong class="name">Name of this Machine</strong>
+										</span>
+										<span class="categories">
+											<span>Web</span>
+											<span>Worker</span>
+											<span>Redis</span>
+											<span>Elastic Search</span>
+											<span>Category #1</span>
+											<span>Category #2</span>
+											<span>Category #3</span>
+											<span>Category #4</span>
+											<span>Category #5</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">SSH</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status building">
+										<span><span>Building</span></span>
+									</span>
+									<span class="box-content">
+										<!-- cpu - ram box -->
+										<span class="cpu-ram">
+											<span class="col">
+												<span class="num">3%</span>
+												<span class="meter-00-percent"></span>
+												<span class="label">CPU</span>
+											</span>
+											<span class="col">
+												<span class="num">74%</span>
+												<span class="meter-70-percent"></span>
+												<span class="label">RAM</span>
+											</span>
+											<span class="error">unavailable</span>
+										</span>
+										<!-- cluster box info -->
+										<span class="info">
+											<strong class="num-title">31.213.13.90</strong>
+											<strong class="num-subtitle">107.20.131.196</strong>
+										</span>
+										<span class="categories">
+											<span>Web</span>
+											<span>Worker</span>
+											<span>Redis</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<!-- cluster box -->
+						<div class="box-holder">
+							<div class="cluster-box">
+								<a href="#modalbox" class="btn" rel="modal:open">SSH</a>
+								<a href="#modalbox" class="box" rel="modal:open">
+									<span class="arrow"></span>
+									<!-- status box -->
+									<span class="status offline">
+										<span><span>Offline</span></span>
+									</span>
+									<span class="box-content">
+										<!-- cpu - ram box -->
+										<span class="cpu-ram unavailable">
+											<span class="col">
+												<span class="num">0%</span>
+												<span class="meter-00-percent"></span>
+												<span class="label">CPU</span>
+											</span>
+											<span class="col">
+												<span class="num">0%</span>
+												<span class="meter-00-percent"></span>
+												<span class="label">RAM</span>
+											</span>
+											<span class="error">unavailable</span>
+										</span>
+										<!-- cluster box info -->
+										<span class="info">
+											<strong class="num-title">52.211.18.96</strong>
+											<strong class="num-subtitle">107.20.131.196</strong>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div id="footer">
+		<div class="footer-holder">
+			<strong class="logo"><a href="#">Machines.io</a></strong>
+			<div class="info">
+				<p>Copyright 2012 JK Tech, Inc.</p>
+				<!-- footer navigation -->
+				<ul class="nav">
+					<li><a href="#">Support</a></li>					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- lightbox -->
+<div id="modalbox" class="modal lightbox">
+	<a href="#" class="close-modal" rel="modal:close">Close</a>
+	<div class="heading">
+		<h3>Deploy History for Assessment App</h3>
+	</div>
+	<form action="#">
+		<fieldset>
+			<div class="box-content">
+				<div class="box-holder">
+					<!-- lightbox form -->
+					<div class="form-holder">
+						<div class="row">
+							<label for="text1">Form Title <span>(additional information class)</span></label>
+							<input id="text1" class="input-text" type="text" value="Font inside looks like this" />
+						</div>
+						<div class="row">
+							<label for="text2">Form Title</label>
+							<input id="text2" class="input-text2" type="text" value="This is SELECTED (highlighted)" />
+						</div>
+						<div class="row">
+							<label for="text3">Form Title</label>
+							<input id="text3" class="input-text3" type="text" value="" />
+							<p>Information Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+						</div>
+						<div class="row row2">
+							<label for="textarea">Form Title <span>(additional information class)</span></label>
+							<textarea id="textarea" cols="30" rows="10"></textarea>
+						</div>
+						<div class="row">
+							<div class="hold">
+								<input type="radio" name="radio" />
+								<input type="radio" name="radio1" checked="checked" disabled="disabled"  />
+								<input type="radio" name="radio" checked="checked" />
+							</div>
+							<div class="hold">
+								<input type="checkbox" />
+								<input type="checkbox" disabled="disabled" checked="checked" />
+								<input type="checkbox" checked="checked" />
+							</div>
+							<div class="hold2">
+								<select>									<option>Select Item</option>									<option>Item 1</option>									<option>Item 2</option>								</select>							</div>
+						</div>
+					</div>
+					<!-- lightbox table -->
+					<div class="infocolumns">
+						<table class="info-table">
+							<thead>
+								<tr>
+									<th>Column Title</th>									<th>Column Title</th>									<th>Column Title</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Row 1 in Column 1</td>									<td>Row 1, Column 2 information</td>									<td>Row 1 Column 3</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<p>Row Two that spans 2 columns looks like this and can go to here.</p>
+										<p>1. <strong><a href="#">R23dssa4n5n56lkj5l465lj6l4jk56l4k5j</a></strong></p>
+										<p>2. <strong><a href="#">jk56R23dssa4n5n56lkj5l465lj6l4l4k5j</a></strong></p>										<p>3. <strong><a href="#">dssa4n5n56lkj5l465lj6l4jk56l4k5jR23</a></strong></p>										<p>4. <strong><a href="#">R23dssa4n5n56lk5lj6l4jk56l4k5jj5l46</a></strong></p>										<p>5. <strong><a href="#">3dssa4n5R2n56lkj5l464jk56l4k5j5lj6l</a></strong></p>									</td>
+									<td>
+										<p>Row 2 Column 2</p>
+										<p>4 min ago</p>										<p>8 min ago</p>										<p>14 min ago</p>										<p>51 min ago</p>										<p>59 min ago</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- lightbox buttons -->
+				<div class="actions">
+					<input class="button-blue" type="submit" value="Action Button" />
+					<a href="#" class="button">Alternate Button</a>
+					<a href="#" class="button-gray">Alternate #2</a>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+</body>
+</html>
