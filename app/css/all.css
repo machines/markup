@@ -492,9 +492,9 @@ form, fieldset{
   text-transform:uppercase;
   overflow:hidden;
 }
-.cluster-box .status.online{background:url(../images/bg-status-online.png) no-repeat 50% 0;}
-.cluster-box .status.building{background:url(../images/bg-status-building.png) no-repeat 50% 0;}
-.cluster-box .status.offline{background:url(../images/bg-status-offline.png) no-repeat 50% 0;}
+.cluster-box .status.green{background:url(../images/bg-status-green.png) no-repeat 50% 0;}
+.cluster-box .status.yellow{background:url(../images/bg-status-yellow.png) no-repeat 50% 0;}
+.cluster-box .status.red{background:url(../images/bg-status-red.png) no-repeat 50% 0;}
 .cluster-box .status span{
   display:block;
   background:url(../images/separator02.png) repeat-x 0 8px;
