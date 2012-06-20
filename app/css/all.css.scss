@@ -594,6 +594,10 @@ form, fieldset {
         display: inline-block;
         padding: 0 8px;
         background: image-url("separator03.png") repeat-x 0 8px;
+
+        span.sha {
+          text-transform: lowercase;
+        }
       }
     }
   }

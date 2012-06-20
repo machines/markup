@@ -504,6 +504,9 @@ form, fieldset{
   padding:0 8px;
   background:url(../images/separator03.png) repeat-x 0 8px;
 }
+.cluster-box .status span span.sha{
+  text-transform: lowercase;
+}
 .cluster-box .box-content{
   display:block;
   padding:5px 8px 3px 7px;
