@@ -6,6 +6,10 @@ body{
   background:#e1edf4 url(../images/bg-body.png) repeat-x;
   min-width:982px;
 }
+p {
+	color:#666;
+	font:14px/17px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 img{border-style:none;}
 a{
   text-decoration:none;
