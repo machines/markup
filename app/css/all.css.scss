@@ -9,6 +9,11 @@ body {
   min-width: 982px;
 }
 
+p {
+  color: #666;
+  font: 14px/17px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 img {
   border-style: none;
 }
@@ -258,9 +263,52 @@ form, fieldset {
   padding: 20px 40px;
 }
 
+// Add new resource button on top-right
+.btn-add {
+  width: 100%;
+  padding-bottom: 4px;
+  padding-top: 2px;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  a {
+    margin: 0 23px 0 0;
+    float: right;
+    font: 13px/22px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 22px;
+    color: #999;
+    border: 1px #bbc1c4 solid;
+    @include border-radius(4px);
+    background-color: #f9f9f9;
+    @include background-image(linear-gradient(bottom, rgb(242,242,242) 1%, rgb(249,249,249) 50%, rgb(255,255,255) 99%));
+    cursor: pointer;
+
+    span {
+      padding: 0 5px 0 26px;
+      height: 22px;
+      float: left;
+      background: image-url("ico-plus.png") no-repeat;
+      @include border-top-left-radius(3px);
+      @include border-bottom-left-radius(3px);
+
+      &:hover {
+        background-position: 0 -50px;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 // Cluster Block
 .cluster-holder {
-  padding: 29px 0 9px;
+  padding: 2px 0 29px;
 }
 
 .cluster-block {
@@ -335,40 +383,6 @@ form, fieldset {
       font-weight: 700;
       background: image-url("bullet03.png") no-repeat 0 9px;
       float: left;
-    }
-  }
-
-  // Add Cluster Button
-  .btn-add {
-    position: absolute;
-    top: -29px;
-    right: 22px;
-    padding-bottom: 8px;
-    background: image-url("none.gif");
-
-    a {
-      font: 13px/22px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      height: 22px;
-      color: #999;
-      border: 1px #bbc1c4 solid;
-      @include border-radius(4px);
-      background-color: #f9f9f9;
-      @include background-image(linear-gradient(bottom, rgb(242,242,242) 1%, rgb(249,249,249) 50%, rgb(255,255,255) 99%));
-      float: left;
-      cursor: pointer;
-
-      span {
-        padding: 0 5px 0 26px;
-        height: 22px;
-        float: left;
-        background: image-url("ico-plus.png") no-repeat;
-        @include border-top-left-radius(4px);
-        @include border-bottom-left-radius(4px);
-      }
-
-      &:hover {
-        text-decoration: none;
-      }
     }
   }
 }
@@ -530,7 +544,7 @@ form, fieldset {
     position:absolute;
     top:3px;
     right:45px;
-    z-index:110;
+    z-index:11;
     padding:0 13px;
     font-size:11px;
     line-height:20px;
@@ -795,13 +809,14 @@ form, fieldset {
     overflow: hidden;
 
     .num {
-      margin:0 4px 2px 0;
-      float:left;
-      padding:0 4px;
-      color:#fff;
-      font-weight:bold;
-      background:#5f8c1a;
-      font-style:normal;
+      margin: 0 4px 1px 0;
+      float: left;
+      padding: 1px 4px;
+      color: #fff;
+      font-weight: bold;
+      line-height: 13px;
+      background: #5f8c1a;
+      font-style: normal;
       @include border-radius(3px);
     }
 
