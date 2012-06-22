@@ -678,11 +678,12 @@ form, fieldset{
   overflow:hidden;
 }
 .cluster-box .tools .num{
-  margin:0 4px 2px 0;
+  margin:0 4px 1px 0;
   float:left;
-  padding:0 4px;
+  padding:1px 4px;
   color:#fff;
   font-weight:bold;
+  line-height:13px;
   background:#5f8c1a;
   font-style:normal;
   border-radius:3px;
