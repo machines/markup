@@ -429,7 +429,7 @@ form, fieldset{
   position:absolute;
   top:3px;
   right:45px;
-  z-index:110;
+  z-index:11;
   padding:0 13px;
   font-size:11px;
   line-height:20px;
@@ -463,6 +463,7 @@ form, fieldset{
   -webkit-box-shadow:0 0 4px #b3cddc;
   -moz-box-shadow:0 0 4px #b3cddc;
   text-decoration:none;
+  z-index:100;
 }
 .cluster-box .btn:hover{
   color:#3579a3;
