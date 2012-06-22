@@ -346,7 +346,7 @@ form, fieldset{
 }
 .cluster-row{
   width:100%;
-  padding-bottom:15px;
+  padding-bottom:5px;
 }
 .cluster-row:after,
 .cluster-title:after{
