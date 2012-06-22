@@ -1058,3 +1058,71 @@ input.button-gray{
   background: #555;
   color: #fff;
 }
+
+
+
+h1 {
+  font: 300 50px/55px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #505050;
+  padding: 3px 5px;
+  margin: 2px;
+}
+h1 a {
+  text-decoration: none;
+  color: #505050;
+}
+h2 {
+	font:40px/40px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #505050;
+	font-weight: 300;
+	padding: 3px 5px;
+	margin: 2px;
+}
+h2 a {
+  text-decoration: none;
+  color: #505050;
+}
+h3 {
+	font:32px/46px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #505050;
+	font-weight: 300;
+	padding: 3px 5px;
+	margin: 2px;
+}
+h3 a {
+  text-decoration: none;
+  color: #505050;
+}
+h4 {
+	font:28px/32px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #505050;
+	font-weight: 600;
+	padding: 3px 5px;
+	margin: 2px;
+}
+h4 a {
+  text-decoration: none;
+  color: #505050;
+}
+h5 {
+	font:22px/26px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #505050;
+	font-weight: 600;
+	padding: 3px 5px;
+	margin: 2px;
+}
+h5 a {
+  text-decoration: none;
+  color: #505050;
+}
+h6 {
+	font:14px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #505050;
+	font-weight: 600;
+	padding: 3px 5px;
+	margin: 2px;
+}
+h6 a {
+  text-decoration: none;
+  color: #505050;
+}
