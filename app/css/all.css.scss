@@ -1,12 +1,15 @@
 @import "compass";
 
-/* reset css */
+html, body {
+  height: 100%;
+  min-width: 982px;
+}
+
 body {
   margin: 0;
   color: #666;
   font: 14px/17px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: #e1edf4 image-url("bg-body.png") repeat-x;
-  min-width: 982px;
 }
 
 p {
@@ -43,22 +46,22 @@ textarea, input[type="text"] {
   color: #333;
 }
 
-textarea{
+textarea {
   width: auto;
   height: 81px;
   overflow: auto;
 }
 
 .input-text {
-  width:568px;
+  width: 568px;
 }
 
 .input-text2 {
-  width:264px;
+  width: 264px;
 }
 
 .input-text3 {
-  width:104px;
+  width: 104px;
 }
 
 textarea.focus, input[type="text"].focus {
@@ -74,12 +77,12 @@ form, fieldset {
 
 #wrapper {
   width: 100%;
+  min-height: 100%;
   overflow: hidden;
 }
 
 // Header
 #header {
-  z-index: 900;
   width: 100%;
   margin-bottom: 5px;
   border-bottom: 1px #9fafb8 solid;
@@ -544,7 +547,7 @@ form, fieldset {
     position:absolute;
     top:3px;
     right:45px;
-    z-index:11;
+    z-index:99;
     padding:0 13px;
     font-size:11px;
     line-height:20px;
@@ -832,8 +835,15 @@ form, fieldset {
 }
 
 // Footer
+#footer-push {
+  height: 84px;
+  clear: both;
+}
+
 #footer {
   width: 100%;
+  height: 84px;
+  margin-top: -84px;
   color: #bcbcbc;
   overflow: hidden;
 
@@ -906,10 +916,11 @@ form, fieldset {
   margin-top: -32px;
   background: image-url("modal/spinner.gif") #111 no-repeat center center;
   @include border-radius(8px);
+  z-index: 300;
 }
 
 .lightbox {
-  z-index:995 !important;
+  z-index:500;
   display: none;
   width:660px;
   background: #fff;
@@ -977,7 +988,7 @@ form, fieldset {
     background:#f1f1f1;
     @include border-radius(8px);
     @include box-shadow(0 3px 3px rgba(0,0,0,0.06));
-    overflow:hidden;
+    // overflow:hidden;
   }
 
   // Lightbox form
@@ -1086,98 +1097,3 @@ input.button-gray{
 .lightbox .actions .button-blue,
 .lightbox .actions .button,
 .lightbox .actions .button-gray{margin:0 15px 0 0;}
-/* custom forms - hide original element */
-.jcf-hidden {
-  display: block !important;
-  position: absolute !important;
-  left: -9999px !important;
-}
-/* custom checkbox styles */
-.chk-area {
-  margin: 0 11px 0 0;
-  float: left;
-  width: 16px;
-  height: 17px;
-  background:image-url("sprites.png") no-repeat 0 -23px;
-  overflow:hidden;
-}
-.chk-checked {background-position:-54px -23px;}
-.chk-checked.chk-disabled {background-position:-27px -23px;}
-/* custom radio styles */
-.rad-area {
-  margin: 0 11px 0 0;
-  float: left;
-  width: 16px;
-  height: 17px;
-  background:image-url("sprites.png") no-repeat;
-  overflow:hidden;
-}
-.rad-checked {background-position:-54px 0;}
-.rad-checked.rad-disabled {background-position:-27px 0;}
-/* custom select styles */
-.select-area {
-  border: 1px solid #cacaca;
-  position: relative;
-  height: 34px;
-  background: image-url("bg-select.png") repeat-x;
-  font: bold 12px/16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #505050;
-  float: left;
-  overflow: hidden;
-
-  .center {
-    float: left;
-    padding: 9px 10px;
-    white-space: nowrap;
-  }
-
-  .select-opener {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: image-url("bg-select.png") no-repeat 0 -40px;
-    float: right;
-    height: 34px;
-    width: 35px;
-    cursor: pointer;
-  }
-}
-
-.select-options {
-  border: 1px solid #cacaca;
-  position: absolute;
-  overflow: hidden;
-  z-index:999;
-  background: #f2f2f2;
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      width: 100%;
-      float: left;
-
-    }
-    a {
-      padding: 5px 10px;
-      display: block;
-      font:12px/16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      color: #505050;
-      height: 1%;
-
-      &:hover {
-        text-decoration: none;
-        background: #555;
-        color: #fff;
-      }
-    }
-  }
-
-  .item-selected a {
-    text-decoration: none;
-    background: #555;
-    color: #fff;
-  }
-}
