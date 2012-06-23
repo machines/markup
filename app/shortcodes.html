@@ -4,22 +4,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Shortcodes</title>
   <link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
-  <!-- JCF framework -->
-  <script type="text/javascript" src="js/jcf.js"></script>
-  <!-- JCF custom forms -->
-  <script type="text/javascript" src="js/jcf.custom-forms.js"></script>
   <!-- JQuery framework -->
   <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
   <!-- JQuery lightbox -->
   <script type="text/javascript" src="js/jquery.modal.js"></script>
   <!-- JQuery js for carusel and same height boxes -->
   <script type="text/javascript" src="js/jquery.main.js"></script>
-  <!-- custom form initialization -->
-  <script type="text/javascript">
-    jcf.lib.domReady(function(){
-      jcf.customForms.replaceAll();
-    });
-  </script>
 </head>
 <body>
 <div id="wrapper">
@@ -53,58 +43,46 @@
   </div>
   <!-- main content -->
   <div id="main">
-    <!-- cluster block -->
-    <div class="cluster-holder">
-      <div class="cluster-block">
-        <!-- add cluster button -->
-        <div class="btn-add">
-          <a href="#"><span>Add New Cluster</span></a>
-        </div>
-        <!-- cluster heading -->
-        <div class="heading">
-          <div class="holder">
-            <ul class="info">
-              <li>6 Machines</li>
-              <li>3 Applications</li>
-              <li>2 Load Balancers</li>
-            </ul>
-            <h2>JK Tech</h2>
-            <strong class="region">US East (Northern Virginia)</strong>
-          </div>
-        </div>
-        <div class="cluster-content">
-              <!-- Content Styles -->
-          <h1>Headline Style for an h1</h1>
-          <p>This is the way content will look.</p>
-          
-			<h2>Headline Style for an h2</h2>
-			<p>This is the way content will look.</p>
-			       
-			<h3>Headline Style for an h3</h3>
-			<p>This is the way content will look.</p>
-			       
-			<h4>Headline Style for an h4</h4>
-			<p>This is the way content will look.</p>
-			       
-			<h5>Headline Style for an h5</h5>
-			<p>This is the way content will look.</p>
-			       
-			<h6>Headline Style for an h6</h6>
-			<p>This is the way content will look.</p>
-       
-          
-          
-          
-          
-          
-          
-          
-        </div>
+    <!-- generic content block -->
+    <div class="generic-content-holder">
+      <div class="generic-content-block">
+        <!-- Content Styles -->
+        <h1>Headline Style for an h1</h1>
+        <p>This is the way content will look.</p>
+
+        <h2>Headline Style for an h2</h2>
+        <p>This is the way content will look.</p>
+
+        <h3>Headline Style for an h3</h3>
+        <p>This is the way content will look.</p>
+
+        <h4>Headline Style for an h4</h4>
+        <p>This is the way content will look.</p>
+
+        <h5>Headline Style for an h5</h5>
+        <p>This is the way content will look.</p>
+
+        <h6>Headline Style for an h6</h6>
+        <p>This is the way content will look.</p>
       </div>
     </div>
-    <!-- cluster block -->
+    <!-- generic content block -->
   </div>
-  <!-- footer -->
+  <div id="footer-push"></div>
+</div>
+<!-- footer -->
+<div id="footer">
+  <div class="footer-holder">
+    <strong class="logo"><a href="#">Machines.io</a></strong>
+    <div class="info">
+      <p>Copyright 2012 JK Tech, Inc.</p>
+      <!-- footer navigation -->
+      <ul class="nav">
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 </body>
 </html>
